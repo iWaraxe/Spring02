@@ -1,11 +1,11 @@
-package com.coherentsolutions.section14;
+package com.coherentsolutions.section141;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-//@Configuration
+@Configuration
 public class AppConfigOld {
-/*
+
     @Bean
     public TemperatureSensor temperatureSensor() {
         return new TemperatureSensor("Sensor123");
@@ -16,5 +16,4 @@ public class AppConfigOld {
         return new WeatherService(sensor);
     }
 
- */
 }

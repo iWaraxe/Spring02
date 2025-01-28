@@ -1,11 +1,13 @@
-package com.coherentsolutions.section14;
+package com.coherentsolutions.section141;
 
 import org.springframework.stereotype.Component;
 
-@Component
 public class TemperatureSensor {
-    // Simulated field, no need for constructor injection for simplicity
-    private final String id = "defaultSensorId";
+    private final String id;
+
+    public TemperatureSensor(String id) {
+        this.id = id;
+    }
 
     public double readTemperature() {
         // Simulate reading the temperature

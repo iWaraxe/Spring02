@@ -1,4 +1,4 @@
-package com.coherentsolutions.section13;
+package com.coherentsolutions.section130;
 
 public class TemperatureSensor {
     private final String sensorId;
@@ -9,6 +9,6 @@ public class TemperatureSensor {
 
     public double readTemperature() {
         // Simulate reading temperature
-        return 25.0; // For simplicity, returning a fixed value
+        return 25.3; // For simplicity, returning a fixed value
     }
 }

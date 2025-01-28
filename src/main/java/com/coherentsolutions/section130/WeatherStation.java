@@ -1,4 +1,4 @@
-package com.coherentsolutions.section13;
+package com.coherentsolutions.section130;
 
 public class WeatherStation {
     private TemperatureSensor sensor;
