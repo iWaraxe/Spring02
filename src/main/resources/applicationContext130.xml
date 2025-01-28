@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Bean definition for TemperatureSensor -->
+    <bean id="temperatureSensor" class="com.coherentsolutions.section130.TemperatureSensor">
+        <!-- Constructor injection -->
+        <constructor-arg value="Sensor123"/>
+    </bean>
+
+    <!-- Bean definition for WeatherStation -->
+    <bean id="weatherStation" class="com.coherentsolutions.section130.WeatherStation">
+        <!-- Setter injection for TemperatureSensor dependency -->
+        <property name="sensor" ref="temperatureSensor"/>
+    </bean>
+
+</beans>
